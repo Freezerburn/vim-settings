@@ -2,6 +2,8 @@ filetype off
 call pathogen#infect()
 filetype plugin indent on
 
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
 set nocompatible
 
 inoremap jj <ESC>
