@@ -50,14 +50,18 @@ set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
 
+let NERDTreeShowLineNumbers=1
+
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
+nnoremap <esc> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+inoremap <esc> <nop>
 nnoremap j gj
 nnoremap k gk
 
