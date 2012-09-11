@@ -1,5 +1,6 @@
 filetype off
 call pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -46,6 +47,9 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 set wrap
+set linebreak
+set nolist
+set formatoptions+=l
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
@@ -70,8 +74,6 @@ nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
 nnoremap ; :
-
-au FocusLost * :wa
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>v V`]
